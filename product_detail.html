@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Product Detail</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Shop Shoe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="container mt-4">
+      <div id="shoeDetail"></div>
+
+      <hr class="my-4" />
+
+      <!-- Danh sách giày tương tự -->
+      <h3>Các sản phẩm tương tự</h3>
+      <div id="similarShoes" class="row"></div>
+
+      <hr class="my-4" />
+
+      <!-- Bảng đánh giá -->
+      <h3>Đánh giá sản phẩm</h3>
+      <div id="reviews" class="mt-3"></div>
+    </div>
+
+        <!-- Footer -->
+        <section class="footer">
+          <div class="container-fluid">
+            <!-- service -->
+            <div class="service">
+              <div class="about-service">
+                <ul class="row">
+                  <li class="col-lg-3 col-md-6">
+                    <i class="fa fa-shipping-fast"></i>
+                    <span>free ship</span>
+                  </li>
+                  <li class="col-lg-3 col-md-6">
+                    <i class="fa fa-credit-card"></i>
+                    <span>100% Secure Payment</span>
+                  </li>
+                  <li class="col-lg-3 col-md-6">
+                    <i class="fa fa-headset"></i>
+                    <span>24x7 Customer Service</span>
+                  </li>
+                  <li class="col-lg-3 col-md-6">
+                    <i class="fa fa-recycle"></i>
+                    <span>Free & Easy Returns</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="photo-sample">
+                <div class="row">
+                  <div class="col-md-2 photo-sample_item">
+                    <img src="./images/footer_1.png" alt="" />
+                  </div>
+    
+                  <div class="col-md-2 photo-sample_item">
+                    <img src="./images/footer_7.png" alt="" />
+                  </div>
+    
+                  <div class="col-md-2 photo-sample_item">
+                    <img src="./images/footer_3.png" alt="" />
+                  </div>
+    
+                  <div class="col-md-2 photo-sample_item">
+                    <img src="./images/footer_4.png" alt="" />
+                  </div>
+    
+                  <div class="col-md-2 photo-sample_item">
+                    <img src="./images/footer_5.png" alt="" />
+                  </div>
+    
+                  <div class="col-md-2 photo-sample_item">
+                    <img src="./images/footer_6.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="footer-content">
+              <div class="row">
+                <!-- location -->
+                <div class="col-md-4 location mb-sm-4 mb-md-0">
+                  <h3>Location</h3>
+                  <p>1245, North Western Street Europia. Lumbio</p>
+                  <p>
+                    Monday to Friday from 09:00 to 17:00. <br />
+                    Call Us+31 (0) 123 456 789
+                  </p>
+                </div>
+    
+                <!-- shop -->
+                <div class="col-md-2 shop mb-sm-4 mb-md-0">
+                  <h3>Shop</h3>
+                  <ul>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Moccasin</a></li>
+                    <li><a href="#">Hiking boot</a></li>
+                    <li><a href="#">Oxford shoe</a></li>
+                    <li><a href="#">Wellington boot</a></li>
+                  </ul>
+                </div>
+    
+                <div class="col-md-2 customer mb-sm-4 mb-md-0">
+                  <h3>Customer</h3>
+                  <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Create Account</a></li>
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="#">Checkout</a></li>
+                  </ul>
+                </div>
+                <!-- email -->
+                <div class="col-md-4 email mb-sm-4 mb-md-0">
+                  <!-- Input Email -->
+                  <h3>Sign up to be the first to know about new collections.</h3>
+                  <div class="placeInput">
+                    <input type="text" placeholder="Email" />
+                    <i class="fa fa-paper-plane"></i>
+                  </div>
+                  <div class="contact-icon">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/get_product.js"></script>
+  </body>
+</html>

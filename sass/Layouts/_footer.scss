@@ -1,0 +1,126 @@
+.footer {
+  margin-top: 50px;
+  .container-fluid {
+    padding: 0 !important;
+  }
+  .service {
+    .about-service {
+      background: $color-home-btn-background;
+      .row {
+        margin-bottom: 0 !important;
+      }
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        li {
+          display: flex;
+          align-items: center;
+          padding: 25px 0;
+          font-size: 20px;
+          color: $color-home-primary;
+          text-transform: capitalize;
+          i {
+            font-size: $font-size-home-large;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    .photo-sample {
+      width: 100%;
+      .row {
+        width: 100%;
+      }
+      .photo-sample_item {
+        padding: 0 !important;
+        img {
+          display: block;
+          width: 100%;
+          background-size: contain;
+        }
+      }
+    }
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    color: $color-home-primary;
+    background: $color-home-secondary;
+    h3 {
+      font-family: "Audiowide", sans-serif;
+      font-size: $font-size-home-medium;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      padding: 0;
+      li {
+        a {
+          color: white;
+          font-size: $font-size-home-sub;
+          transition: all 0.5s;
+        }
+        margin-bottom: 20px;
+        &:hover {
+          a {
+            color: $color-home-btn-hover-primary;
+          }
+        }
+      }
+    }
+
+    padding: 80px 30px;
+
+    .location {
+      p {
+        font-size: $font-size-home-sub;
+      }
+    }
+    .email {
+      h3 {
+        color: $color-home-btn-background;
+      }
+
+      .placeInput {
+        position: relative;
+        input {
+          width: 100%;
+          height: 50px;
+          background: $color-home-secondary;
+          border: 1px solid $color-home-primary;
+          border-radius: 30px;
+          padding: 20px;
+        }
+        i {
+          position: absolute;
+          top: 16px;
+          right: 30px;
+        }
+      }
+
+      .contact-icon {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        i {
+          width: 35px;
+          height: 35px;
+          background: $color-home-primary;
+          color: $color-home-secondary;
+          text-align: center;
+          line-height: 35px;
+          border-radius: 50%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-sample {
+    display: none;
+  }
+}

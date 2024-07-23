@@ -1,0 +1,37 @@
+.carousel{
+    .carousel-inner{
+        .carousel-item{
+            position: relative;
+            .carousel-content{
+                position: absolute;
+                top: 20%;
+                left: 5%;
+                width: 40%;
+                h2{
+                    @include title();
+                    span{
+                        font-family: "Audiowide", sans-serif;
+                        text-transform: uppercase;
+                        color: $color-home-btn-background;
+                    }
+                }
+                p{
+                    text-transform: capitalize;
+                    &:nth-child(1){
+                        font-size:$font-size-home-medium ;
+                    }
+                    &:nth-child(3){
+                        font-size: $font-size-home-sub;
+                        font-weight: 600;
+                    }
+                }
+
+                button{
+                    @include btn();
+                    font-family: "Audiowide", sans-serif;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}

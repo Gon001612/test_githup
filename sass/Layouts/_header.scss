@@ -1,0 +1,89 @@
+header {
+  background: $color-home-secondary;
+  nav {
+    .logo-brand {
+      a {
+        font-size: $font-size-home-large;
+        color: $color-home-primary;
+      }
+    }
+
+    .collapse {
+      ul {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-right: 20px;
+        li {
+          a {
+            color: $color-home-primary;
+            transition: all 0.3s;
+            &:hover {
+              color: $color-home-btn-hover-primary;
+            }
+          }
+          .active {
+            color: $color-home-btn-hover-primary;
+          }
+        }
+      }
+    }
+
+    .headerRight {
+      height: 100%;
+      .inputSearch {
+        input {
+          width: 300px;
+          height: 40px;
+          background: $color-home-input;
+          font-size: $font-size-home-sub;
+          font-weight: 500;
+          border-radius: 30px;
+        }
+        .icon-search {
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: block;
+          .btnSearch {
+            background: $color-home-btn-background;
+            color: $color-home-primary;
+            font-size: $font-size-home-sub;
+            height: 100%;
+            width: 50px;
+            border-radius: 30px;
+            transition: all 0.3s;
+            &:hover {
+              background: $color-home-btn-hover-primary;
+              color: $color-home-secondary;
+            }
+          }
+        }
+      }
+
+      .cart {
+        margin-left: 20px;
+        i {
+          background: $color-home-btn-background;
+          color: $color-home-primary;
+          font-size: $font-size-home-sub;
+          height: 100%;
+          width: 60px;
+          border-radius: 30px;
+          transition: all 0.3s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background: $color-home-btn-hover-primary;
+            color: $color-home-secondary;
+          }
+        }
+      }
+    }
+    .navbar-toggler-icon {
+      background-color: $color-home-btn-background;
+      border-radius: $border-radius;
+    }
+  }
+}

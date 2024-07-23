@@ -1,0 +1,57 @@
+
+// home page variables
+$font-home-family: "Audiowide", sans-serif;
+$color-home-primary: #fff;
+$color-home-secondary: #000;
+$color-home-input: #e2e2e2;
+$color-home-btn-background: #DD620A;
+$color-home-btn-hover-primary: #FBBF18;
+
+$font-size-home-title: 48px;
+$font-size-home-large: 32px;
+$font-size-home-medium: 24px;
+$font-size-home-xsmall: 18px;
+$font-size-home-small: 16px;
+$font-size-home-sub: 14px;
+
+// detail page variables
+$font-family: 'Poppins', sans-serif;
+$color-primary: #000;
+$color-secondary: #ff5e00;
+$color-tertiary: #00aeff;
+$color-background: #f8f9fa;
+$color-hover-primary: #ff3c00;
+$color-hover-secondary: #0066ff;
+
+$font-size-large: 32px;
+$font-size-medium: 22px;
+$font-size-small: 17px;
+$font-size-xsmall: 16px;
+
+$padding-main: 20px 8%;
+$border-radius: 6px;
+
+@mixin title(){
+    font-size: $font-size-home-title;
+    font-family: "Audiowide", sans-serif;
+    text-transform: uppercase;
+}
+
+@mixin btn(){
+    color: $color-home-primary;
+    height: 40px;
+    border-radius: 30px;
+    padding:25px 30px;
+    font-size: $font-size-xsmall;
+    background: $color-home-btn-background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+    &:hover{
+        background: $color-home-btn-hover-primary;
+        color: $color-home-secondary;
+      }
+}
